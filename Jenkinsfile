@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage ('checkout'){
             steps{
-                git branch = "master" , url = "https://github.com/devops-project-manisha/Banking-Application.git"
+                git branch = "master", url = "https://github.com/devops-project-manisha/Banking-Application.git"
             }
         }
 
