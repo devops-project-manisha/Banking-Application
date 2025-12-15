@@ -8,9 +8,11 @@ pipeline {
                     url: 'https://github.com/devops-project-manisha/Banking-Application.git'
             }
         }
-        stage('build') {
+         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                dir('bankwebapp') {
+                    sh 'mvn clean package'
+                }
             }
         }
     }
