@@ -1,12 +1,12 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage ('checkout'){
-            steps{
-                git branch = "master", url = "https://github.com/devops-project-manisha/Banking-Application.git"
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'master',
+                    url: 'https://github.com/devops-project-manisha/Banking-Application.git'
             }
         }
-
-
-}
+    }
 }
